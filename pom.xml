@@ -88,8 +88,6 @@
 	    <artifactId>okhttp</artifactId>
 	    <version>3.8.0</version>
 	</dependency>
-	
-	
   </dependencies>
   
   
