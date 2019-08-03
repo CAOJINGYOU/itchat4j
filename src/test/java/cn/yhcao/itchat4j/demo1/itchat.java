@@ -116,7 +116,7 @@ public class itchat implements IMsgHandlerFace {
 			logger.info("strUrl:\t" + strUrl);
 			ItchatWriteFile(strUrl);
 			String content = msg.getContent();
-			
+
 			int nStart = 0;
 			int nEnd = 0;
 			String strStartHttp = "http://mp.weixin.qq.com/";
@@ -135,7 +135,7 @@ public class itchat implements IMsgHandlerFace {
 				}
 				String strUrlx = content.substring(nStart, nEnd + strEnd.length());
 				logger.info("strUrl:\t" + strUrlx);
-				ItchatWriteFile(strUrl);
+				ItchatWriteFile(strUrlx);
 				nStart = content.indexOf(strStartHttp, nEnd + strEnd.length());
 			}
 			
